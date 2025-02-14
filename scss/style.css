@@ -31,8 +31,8 @@ header div a {
 
 .encabezado {
   display: block;
-  color: black;
-  background-color: black;
+  color: gray;
+  background-color: red;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
@@ -200,6 +200,4 @@ main section div {
   -webkit-text-stroke: 0.2px gray;
   font-size: large;
   font-weight: 600;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
