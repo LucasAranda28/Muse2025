@@ -1,74 +1,123 @@
-@media (min-width: 1024px) {
-    .encabezado{
-        color: red;
-        background-color: blueviolet;
-}
-header {
-    background-color: #31322e;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 50px;
-    position: fixed;
-    width: 100%;
-    
+@import "../Utilities/variables";
 
-    nav {
-        a {
-            text-decoration: none;
-            color: red;
-            padding: 15px;
-            font-weight: bolder;
-            transition: 1s;
+@media screen and (min-width:1024px) {
+    body {
+        header {
+            display: block;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: gray;
+                padding: 5px;
+                font-weight: bolder;
+                transition: 1s;
+            }
+
+            .encabezado {
+                color: #31322e;
+                background-color: $color-bg;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.3em;
+                // position: fixed;
+                // top: 0;
+                // left: 0;
+                // width: 100%;
+            }
+
+            .contenedor-header {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #31322e;
+                .logo{
+                    align-items: center;
+                    text-align: center;
+                    align-content: center;
+                }
+
+                
+            }
+
+            .menu-navegable {
+                color: white;
+                text-decoration: none;
+                font-size: 1.8em;
+                align-items: center;
+                //border: 2px solid red;
+            }
+
+            .menu-hamburguesa {
+                display: flex;
+            }
+
+            .menu-navegable a:hover {
+                background-color: black;
+                border-radius: 8px;
+                transform: scale(1.5);
+            }
         }
-    }
 
-    div {
-        display: flex;
-        align-items: center;
-
-        a {
-            text-decoration: none;
+        main {
             color: white;
-            margin: 0px 30px 0px 0px;
+
+            h1 {
+                color: white;
+            }
+
+            section {
+                div {
+                    display: block;
+                }
+            }
+
+            .seccion-principal {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 400px);
+                gap: 35px;
+                margin: 100px;
+
+                .shows {
+                    display: grid;
+                    grid-column: 1/5;
+                    grid-row: 1/3;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 40px;
+
+                    .card {
+                        background-size: 500px;
+                        background-position: center center;
+                        border: 2px solid #31322e;
+                        border-radius: 15px;
+
+                        .texto {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            padding: 15px;
+                            color: white;
+                            -webkit-text-stroke: 0.2px white;
+                            font-size: 3rem;
+
+                            p {
+                                color: white;
+                                -webkit-text-stroke: 0.2px gray;
+                                font-size: large;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-}
-.encabezado {
-    display: block;
-    color: black;
-    background-color: red;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid #00DEF9;
-}
-
-.menu-navegable {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-    align-items: center;
-    
-}
-
-.menu-hamburguesa {
-    text-align: right;
-}
-.contenedor-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin:23px 150px 0px;
-}
-.menu-navegable a:hover {
-    background-color: black;
-    border-radius: 8px;
-    transform: scale(1.5);
-}
 }

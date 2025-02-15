@@ -1,6 +1,25 @@
- @media (min-width: 768px) {
-    .encabezado{
-        color: black;
-       background-color: yellow;
- }
- }
+@media (min-width: 768px) {
+    body {
+        header {
+            .encabezado {
+                color: #31322e;
+                background-color: black;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.1em;
+            }
+            .logo {
+                margin: 0px;
+                width: 150px;
+                align-content: center;
+            }
+
+            .menu-hamburguesa {
+                display: none;
+            }
+
+            main {}
+        }
+
+    }
+}
