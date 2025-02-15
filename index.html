@@ -17,8 +17,18 @@
         <div class="encabezado">
             <p>Sé el primero en enterarte de las últimas novedades de Muse</p>
         </div>
+        
         <div class="contenedor-header">
-            <img src="img/muse-logo.png" alt="logo-muse" width="120px" />
+            <img class="logo" src="img/muse-logo.png" alt="logo-muse" width="120px" />
+            
+            <div class="menu-hamburguesa">
+                <!-- <a href="#">INICIAR SESIÓN</a> -->
+                <!-- bootstrap -->
+                <button id="boton-inicio" type="button" class="btn btn-info">Iniciar sesión</button>
+                <img src="img/hambnurguesa.png" alt="MenuHamburguesa" width="35px" />
+            </div>
+        </div>
+        <div class="contenedor-nav">
             <nav class="menu-navegable">
                 <a href="index.html">INICIO</a>
                 <a href="HTML/Tour.html">TOUR</a>
@@ -26,12 +36,6 @@
                 <a href="HTML/Music.html">MÚSICA</a>
                 <a href="HTML/Store.html">STORE</a>
             </nav>
-            <div class="menu-hamburguesa">
-                <!-- <a href="#">INICIAR SESIÓN</a> -->
-                <!-- bootstrap -->
-                <button type="button" class="btn btn-info">Iniciar sesión</button>
-                <img src="img/hambnurguesa.png" alt="MenuHamburguesa" width="35px" />
-            </div>
         </div>
     </header>
 
@@ -41,6 +45,9 @@
                 <h1>WORLD TOUR 2025</h1>
                 <p>Encontrá todas las fechas aquí!</p>
             </div>
+            
+        </section>
+        <section class="contenedor-carousel">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -72,8 +79,6 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
-        <section class="contenedor-carousel">
 
             <!-- <section>
                 <img src="img/muse-banda.jpg" alt="muse-principal" width="100%" />

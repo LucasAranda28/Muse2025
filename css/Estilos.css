@@ -5,73 +5,62 @@
 
 header {
   background-color: #31322e;
-  display: flex;
+  display: block;
   align-items: center;
-  padding: 20px;
-  gap: 50px;
-  position: fixed;
+  text-align: center;
   width: 100%;
 }
-header nav a {
+header p {
+  margin: 0px;
+}
+header a {
   text-decoration: none;
-  color: red;
-  padding: 15px;
+  color: gray;
+  padding: 5px;
   font-weight: bolder;
   transition: 1s;
 }
-header div {
-  display: flex;
-  align-items: center;
+header #boton-inicio {
+  display: none;
 }
-header div a {
-  text-decoration: none;
-  color: white;
-  margin: 0px 30px 0px 0px;
-}
-
-.encabezado {
+header .encabezado {
   display: block;
-  color: black;
-  background-color: green;
+  color: gray;
+  background-color: black;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border: 2px solid #00DEF9;
+  font-size: 1em;
 }
-
-.menu-navegable {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3em;
-  align-items: center;
-}
-
-.menu-hamburguesa {
-  text-align: right;
-}
-
-.contenedor-header {
+header .contenedor-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 23px 150px 0px;
 }
-
-.menu-navegable a:hover {
+header .logo {
+  align-items: center;
+  margin: 15px;
+}
+header .menu-navegable {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  align-items: center;
+}
+header .menu-navegable a:hover {
   background-color: black;
   border-radius: 8px;
   transform: scale(1.5);
+}
+header .menu-hamburguesa {
+  margin: 15px;
 }
 
 @media (min-width: 768px) {
   .encabezado {
     color: black;
-    background-color: cyan;
+    background-color: yellow;
   }
 }
 footer {
@@ -149,43 +138,48 @@ footer {
     transform: scale(1.5);
   }
 }
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
-
-main {
+body main {
+  color: white;
+  text-align: center;
+}
+body main h1 {
+  margin: 20px 0px;
   color: white;
 }
-main h1 {
-  color: white;
+body main p {
+  margin: 0px;
 }
-main section div {
+body main section {
   display: block;
 }
-
-.seccion-principal {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 400px);
-  gap: 35px;
-  margin: 100px;
+body .contenedor-carousel {
+  margin-top: 20px;
 }
-.seccion-principal .shows {
+body .seccion-principal {
   display: grid;
-  grid-column: 1/5;
-  grid-row: 1/3;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  margin: 0px 15px;
 }
-.seccion-principal .shows .card {
+body .seccion-principal .shows {
+  display: block;
+}
+body .seccion-principal .shows .card {
   background-size: 500px;
   background-position: center center;
-  border: 2px solid #00DEF9;
+  border: 2px solid gray;
   border-radius: 15px;
+  margin: 20px 0px;
 }
-.seccion-principal .shows .card .texto {
+body .seccion-principal .shows .card .texto {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -195,11 +189,11 @@ main section div {
   -webkit-text-stroke: 0.2px white;
   font-size: 3rem;
 }
-.seccion-principal .shows .card .texto p {
+body .seccion-principal .shows .card .texto p {
   color: white;
   -webkit-text-stroke: 0.2px gray;
   font-size: large;
   font-weight: 600;
 }
 
-/*# sourceMappingURL=Estilos.css.map */
+/*# sourceMappingURL=estilos.css.map */
