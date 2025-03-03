@@ -1,4 +1,5 @@
 @import "../Utilities/variables";
+@import "../Utilities/mixin";
 
 @media screen and (min-width:1024px) {
     body {
@@ -7,6 +8,7 @@
             align-items: center;
             text-align: center;
             width: 100%;
+
             p {
                 margin: 0px;
             }
@@ -32,18 +34,18 @@
             }
 
             .contenedor-header {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #31322e;
-                .logo{
+                @include flex;
+                // display: flex;
+                // width: 100%;
+                // justify-content: space-between;
+                // align-items: center;
+                // background-color: #31322e;
+
+                .logo {
                     align-items: center;
                     text-align: center;
                     align-content: center;
                 }
-
-                
             }
 
             .menu-navegable {
@@ -57,7 +59,8 @@
             .menu-hamburguesa {
                 display: flex;
                 margin: 10px;
-                img{
+
+                img {
                     margin: 10px;
                 }
             }
@@ -122,11 +125,8 @@
                     }
                 }
             }
+
             .seccion-principal-videos {
-                // display: grid;
-                // grid-template-columns: repeat(2, 1fr);
-                // grid-template-rows: repeat(2, 300px);
-                
 
                 .videos {
                     display: grid;

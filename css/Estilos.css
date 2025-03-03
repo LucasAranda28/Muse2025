@@ -133,9 +133,9 @@ footer div a {
   }
   body header .contenedor-header {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     background-color: #31322e;
   }
   body header .contenedor-header .logo {

@@ -36,7 +36,7 @@ body {
 
         .shows {
             display: block;
-            
+
 
             .card {
                 background-size: 500px;
@@ -61,13 +61,15 @@ body {
                         font-size: large;
                         font-weight: 600;
                     }
-                    
+
                 }
             }
         }
     }
+
     .seccion-principal-videos {
         display: flex;
+
         .videos {
             margin: 30px;
 
@@ -97,4 +99,5 @@ body {
                 }
             }
         }
-}}
+    }
+}
